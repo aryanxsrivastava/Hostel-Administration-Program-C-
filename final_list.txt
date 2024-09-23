@@ -1,0 +1,18 @@
+USER INFORMATION:
+Name: harsh
+Enrollment Number: 1188
+Mobile Number: 9050870678
+Gender: M
+Preferred State: MP
+________________________________________________________________________
+ROOMMATE INFORMATION::
+Name: Vikas
+Enrollment Number: 201671002
+Mobile Number: 1234567890
+Gender: M
+Room Number: C1-101
+
+________________________________________________________________________
+
+________________________________________________________________________
+
