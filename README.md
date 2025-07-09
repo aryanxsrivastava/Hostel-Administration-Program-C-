@@ -1,33 +1,142 @@
-Bennett-e-dorm: Hostel Administration Program
-Welcome to Bennett-e-dorm, a C++-based Hostel Administration System that ensures seamless management for students and administrators alike. The system employs a friendly interface, incorporating advanced features to enhance the user experience.
 
-Greetings and Menu Options
-Upon execution, Bennett-e-dorm extends a warm welcome, varying its greeting based on the time of the day. Users are presented with three main options: Student, Administrator, and Exit.
+# 🏨 Hostel Administration Program (C)
 
-Student Zone
-Registration: Students can register by providing essential details, such as Enroll No. (College ID), Name, Mobile No., Password, and Confirm Password. Stringent checks ensure password accuracy and validate mobile numbers. Successful registrations are recorded in the registered.txt file.
+A console-based C application to manage hostel operations—student registration, room allotment, fee tracking, and record management—built for educational purposes and lightweight use.
 
-Login: Enrolled students can access the Student Zone by entering their Enroll No. and Password.
+> ⚠️ **Disclaimer:** This project is intended for learning and practice only. It is not recommended for production use without additional security and error handling.
 
-Room Allotment: Students have the option to secure a room based on their gender and preferred state. The system intelligently allocates rooms, saving the information in roomallocation.txt. If a room is full, the data is transferred to finalroomallocation.txt.
+---
 
-Raise a Complaint: Students can log complaints, providing their Enroll No., Name, and a brief description of the issue. Complaints are stored in the complaint.txt file, with a confirmation message provided.
+## 🚀 Features
 
-Return to Main Menu and Exit options are available.
+- 🌟 Student registration and details maintenance  
+- 🛏️ Room allocation & deallocation  
+- 💲 Fee payment and tracking  
+- 🔍 Search & view student and room records  
+- 🧹 Delete or update existing entries  
+- 💾 Data persistence using binary file I/O  
+- ✔️ Menu-driven interface, easy to navigate
 
-Administrator Zone
-Administrators access the system by entering their credentials.
+---
 
-Show Allotted Students: This feature displays information from finalroomallocation.txt, showcasing students and their respective allotted rooms.
+## 🗂️ Project Structure
 
-Show All Complaints: Administrators can view complaints lodged by students, sourced from the complaint.txt file.
+```
+Hostel-Administration-Program-C
+├── main.c
+├── hostel.h
+├── hostel.c
+├── data/
+│   ├── students.dat
+│   └── rooms.dat
+└── README.md
+```
 
-Return to Main Menu and Exit options are available for administrators.
+---
 
-Implementation Details
-The project leverages data structures, including Binary Search Trees and Vectors, to enhance efficiency in data storage and retrieval. With eight .cpp files, including the central main.cpp, the components seamlessly integrate. Information is systematically managed across eight .txt files.
+## 🛠️ Requirements
 
-Conclusion
-Bennett-e-dorm offers a user-centric approach to hostel administration. Whether you are a student seeking hassle-free accommodation or an administrator in need of streamlined oversight, this system is tailored to meet your requirements. Your valuable feedback is appreciated, and we hope your experience with Bennett-e-dorm is both pleasant and efficient.
+- C compiler (like `gcc` or `clang`)
+- Compatible on Windows, Linux, and macOS
 
-Visit our GitHub repository for further details and updates. Thank you for choosing Bennett-e-dorm!
+---
+
+## 🎯 Build & Run
+
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/aryanxsrivastava/Hostel-Administration-Program-C-.git
+   cd Hostel-Administration-Program-C-
+   ```
+
+2. **Compile**
+   ```bash
+   gcc main.c hostel.c -o hostel-admin
+   ```
+
+3. **Run**
+   ```bash
+   ./hostel-admin
+   ```
+
+---
+
+## 📋 Menu Overview
+
+```text
+================ Hostel Administration ================
+1. Add New Student
+2. Allocate Room
+3. Record Fee Payment
+4. View Student Record
+5. View Room Status
+6. Update Student Details
+7. Delete Student Record
+0. Exit
+Enter your choice:
+```
+
+Choose a number to access functionality. Input prompts will guide through details.
+
+---
+
+## 🧪 Demo Session
+
+```text
+Enter your choice: 1
+Enter student name: John Doe
+Enter age: 20
+Enter course: B.Tech
+...
+[+] Student added (ID: 101)
+
+Enter your choice: 2
+Enter student ID: 101
+Enter room number: 203
+[+] Room 203 allotted to student 101
+
+Enter your choice: 3
+Enter student ID: 101
+Enter amount paid: 1500
+[+] Fee recorded
+
+Enter your choice: 4
+Enter student ID: 101
+Student: John Doe | Room: 203 | Fee paid: 1500
+```
+
+---
+
+## 🧠 How It Works
+
+- **Data Models**: Defined in `hostel.h` (`Student`, `Room`)
+- **Operations**: Implemented in `hostel.c`—handles CRUD and file operations
+- **Persistence**: Student and room data stored in `students.dat` and `rooms.dat`
+- **Error Handling**: Input validation and basic checks (e.g. room availability)
+
+---
+
+## 🧩 Future Improvements
+
+- ✅ Input validation (e.g. duplicate IDs)
+- ✅ Fee status reports (e.g. pending dues)
+- 🔄 Backup and restore data
+- 🔐 User authentication for admin
+- 🗃️ CSV export/import for records
+
+---
+
+## 📌 License
+
+MIT License – see [LICENSE](LICENSE)
+
+---
+
+## 🙋 Author
+
+**Aryan Srivastava**  
+[GitHub](https://github.com/aryanxsrivastava)
+
+---
+
+> ⭐ If you find this useful, please ★ the repo!
