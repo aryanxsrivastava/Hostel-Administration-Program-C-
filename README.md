@@ -126,11 +126,6 @@ Student: John Doe | Room: 203 | Fee paid: 1500
 
 ---
 
-## 📌 License
-
-MIT License – see [LICENSE](LICENSE)
-
----
 
 ## 🙋 Author
 
